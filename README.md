@@ -1,5 +1,5 @@
 # My Super Sampling Shit Using ISR RDN + GAN
-## Setup:
+## Setup & Run:
 Using ISR(Image Super Resolution) using RDN_GANS/weights='noise-cancel' model
 ```bash
 # Create anaconda environment
