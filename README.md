@@ -1,9 +1,9 @@
-# My Super Sampling Shit
+# My Super Sampling Shit Using ISR RDN + GAN
 ## Setup:
 Using ISR(Image Super Resolution) using RDN_GANS/weights='noise-cancel' model
 ```bash
 # Create anaconda environment
-conda create -n ssgpu python=3.6
+conda create -n ssgpu python=3.6 -y
 conda activate ssgpu
 pip install ISR
 conda install tensorflow-gpu -y

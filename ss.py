@@ -20,14 +20,18 @@ def main():
 	# Creates output file path
 	img_path_split = img_path.split(os.sep)
 	fname_in_full = img_path_split[-1]
+	if len(img_path_split) > 1:
+		input_dir = os.path.join(*img_path_split[:-1])
+	else:
+		input_dir = ''
 	fname_in_file, fname_in_ext = fname_in_full.rsplit('.', 1)
 	fname_out_file = fname_in_file + f'-ss_{img_ss.shape[1]}x{img_ss.shape[0]}'
-	fname_out_full = fname_out_file + '.png'
+	fname_out_full = os.path.join(input_dir, fname_out_file + '.png')
+
+	# Saves new super sampled image and prints old/new resolutions
 	print(f'\nOriginal Resolution = {img.shape[1]}x{img.shape[0]}')
 	print(f'New Resolution = {img_ss.shape[1]}x{img_ss.shape[0]}')
 	print(f'Number of iterations = {count}\n')
-
-	# Saves new super sampled image
 	img_new.save(fname_out_full)
 
 if __name__ == '__main__':
