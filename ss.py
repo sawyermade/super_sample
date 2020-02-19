@@ -19,11 +19,11 @@ def main():
 
 	# Creates output file path
 	img_path_split = img_path.split(os.sep)
-	fname_in_full = img_path_split[-1]
 	if len(img_path_split) > 1:
 		input_dir = os.path.join(*img_path_split[:-1])
 	else:
 		input_dir = ''
+	fname_in_full = img_path_split[-1]
 	fname_in_file, fname_in_ext = fname_in_full.rsplit('.', 1)
 	fname_out_file = fname_in_file + f'-ss_{img_ss.shape[1]}x{img_ss.shape[0]}'
 	fname_out_full = os.path.join(input_dir, fname_out_file + '.png')
