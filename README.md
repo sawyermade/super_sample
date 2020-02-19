@@ -15,4 +15,4 @@ cd super_sample
 # Run program, ex: $ python ss.py path/to/image/file min_width_integer
 python ss.py sample_image.jpg 4000
 ```
-Outputs original_filename + -ss_widthxheight.png
+Output: original_filename + -ss_widthxheight.png
