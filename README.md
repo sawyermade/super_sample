@@ -1,6 +1,6 @@
 # My Super Sampling Shit Using ISR RDN + GAN
 ## Setup & Run:
-Using ISR(Image Super Resolution) using RDN_GANS/weights='noise-cancel' model
+Using ISR(Image Super Resolution) using "Artefact Cancelling GANS"/weights='noise-cancel' model
 
 Doubles width and height for every iteration until new_width > min_width_integer
 ```bash
