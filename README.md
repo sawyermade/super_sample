@@ -1,6 +1,6 @@
 # My Super Sampling Shit
 ## Setup:
-Using ISR, image-super-resolution using RDN_GANS/weights='noise-cancel'
+Using ISR(Image Super Resolution) using RDN_GANS/weights='noise-cancel model'
 ```bash
 # Create anaconda environment
 conda create -n ssgpu python=3.6
