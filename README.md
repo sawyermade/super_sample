@@ -6,7 +6,7 @@ Using ISR(Image Super Resolution) using RDN_GANS/weights='noise-cancel' model
 conda create -n ssgpu python=3.6
 conda activate ssgpu
 pip install ISR
-conda install tensorflow-gpu
+conda install tensorflow-gpu -y
 
 # Clone repo and enter directory
 git clone https://github.com/sawyermade/super_sample.git 
