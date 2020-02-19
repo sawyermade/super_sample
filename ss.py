@@ -4,15 +4,15 @@ from ISR.models import RDN
 
 def main():
 	# Opens image and converts to numpy
-	img_path, min_size = sys.argv[1], int(sys.argv[2])
+	img_path, min_width = sys.argv[1], int(sys.argv[2])
 	img_pil = Image.open(img_path)
 	img = np.array(img_pil)
 
-	# Super samples image and converts back to pil
+	# Super samples image until at least width is min_width and converts back to pil
 	rdn = RDN(weights='noise-cancel')
 	img_ss = img.copy()
 	count = 0
-	while(img_ss.shape[1] < min_size):
+	while(img_ss.shape[1] < min_width):
 		img_ss = rdn.predict(img_ss, by_patch_of_size=50)
 		count += 1
 	img_new = Image.fromarray(img_ss)
