@@ -1,4 +1,4 @@
-# My Super Sampling Shit Using ISR RDN + GAN
+# My Super Sampling Stuff Using ISR RDN + GAN
 ## Setup & Run:
 Using ISR(Image Super Resolution) using "Artefact Cancelling GANS"/weights='noise-cancel' model
 
